@@ -1,0 +1,28 @@
+
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        list-style-type: none;
+        .flex-item {
+            margin-right: 1rem;
+        }
+        .flex-item:last-of-type {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.brandLogo {
+    margin-right: auto;
+    margin-left: 2rem;
+    background: $brandGreen;
+    padding: 1rem;
+    border-radius: 30%;
+}

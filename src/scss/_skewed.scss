@@ -1,0 +1,97 @@
+
+/* SKEWED */
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+    .content-wrap {
+        position: absolute;
+        width: 100vw;
+        min-height: 55vw;
+    }
+    .content-body {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+        color: $white;
+    }
+    img.person {
+        position: absolute;
+        width: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    img.logo {
+        position: absolute;
+        width: 20%;
+        top: 50%;
+        left: 5%;
+        transform: translate(5%, -50%); 
+        &.secondaryLogo {
+            left: auto;
+            right: 5%;
+            transform: translate(-5%, -50%); 
+        }
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.bottom {
+    background: #222;
+    z-index: 1;
+    .content-body {
+        right: 5%;
+    }
+    h1 {
+        color: $orange;
+    }
+}
+
+.top {
+    background: $white;
+    color: $black;
+    z-index: 2;
+    width: 50vw;
+    transform: skew(-30deg);
+    margin-left: -2000px;
+    width: calc(50vw + 2000px);
+    .content-wrap {
+        transform: skew(30deg);
+        margin-left: 2000px;
+    }
+    .content-body {
+        left: 5%;
+        color: $black;
+    }
+}
+
+.skewed {
+    .animLine {
+        position: absolute;
+        height: 100%;
+        display: block;
+        background-color: $orange;
+        width: 5px;
+        top: 0;
+        left: 50%;
+        z-index: 3;
+        top: 50%;
+        transform: rotate(30deg) translateY(-50%);
+        height: 200%; 
+        transform-origin: top; 
+    }   
+}
