@@ -44,7 +44,19 @@ button {
 /* IMAGES */
 
 .speakers {
-    margin: 1rem 0;
+    margin: 3rem 0;
+    h1 {
+        width: 100%;
+        text-align: center;
+        color: $brandGreen;
+        border-bottom: 1px solid $brandGreen;
+        line-height: 0.1rem;
+        margin: 1rem 0 1rem;
+        span {
+            background: $white;
+            padding:0 10px;
+        }
+    }
     ul {
         padding: 0;
         list-style-type: none;

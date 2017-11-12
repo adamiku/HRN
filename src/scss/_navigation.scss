@@ -44,14 +44,14 @@ nav {
         margin-right: 1rem;
     }
     .flex-item:last-of-type {
-        margin-right: 2rem;
+        margin-right: 2rem !important;
     }
 }
 .brandLogo {
     margin-right: auto;
     margin-left: 2rem;
     background: $brandGreen;
-    padding: 1rem;
+    padding: 1rem 1rem 0.7rem 1rem;
     border-radius: 30%;
 }
 

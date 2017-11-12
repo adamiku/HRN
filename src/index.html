@@ -43,32 +43,31 @@
     </nav> 
     <header class="video-header container">
         <div class="fullscreen-video-wrapper">
-             <video autoplay loop muted>
+             <video id="video" autoplay loop muted playsinline>
                  <source src="./assets/movie/movie.mp4">
-                Your browser does not support the video tag
-            </video> 
+            </video>
+            <div id="fallbackBackground"></div>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content text-md-center">
             <h1><span class="highlightText">Unleash</span> London</h1>
             <small>20-21 March 2018</small>
+            <h2 class="hideOnMobile">THE FUTURE OF WORK IS NOW!</h2>
             <p class="hideOnMobile">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Id temporibus perferendis necessitatibus numquam amet impedit explicabo?
-                Debitis quasi ullam aperiam!
             </p>
             <a class="btn">Book now</a>
         </div>
     </header>
 
-    <!-- SKEWED SECTION -->
+    <!-- SKEWED SECTION FOR DESKTOP-->
 
     <section id="wrapper" class="skewed">
         <div class="layer bottom">
             <div class="content-wrap">
                 <img src="assets/images/title-logo.png" class="logo" alt="logo" width="100%">                
                 <div class="content-body">
-                    <h1>Imagination is the source of every form of human achievement.</h1>
+                    <h1>"Imagination is the source of every form of human achievement."</h1>
                     <br>
                     <strong>Sir Ken Robinson</strong>
                 </div>
@@ -78,23 +77,46 @@
         <div class="layer top">
             <div class="content-wrap">
                 <div class="content-body">
-                    <h1>The best event in the world on HR and Technology</h1>
+                    <h1>"The best event in the world on HR and Technology."</h1>
                     <br>
                     <strong>Josh Bersin</strong>
                     <br>
                     Principal & Founder, Bersin by Deloitte
                 </div>
-                <img src="assets/images/speakers-sec-bg.jpg" class="person" alt="Sir Robinson">
+                <img src="assets/images/speakers-sec-bg.jpg" class="person" alt="Josh Bersin">
                 <img src="assets/images/title-logo.png" class="logo secondaryLogo" alt="logo" width="100%">
             </div>
         </div>
         <div class="animLine"></div>
     </section>
 
+    <!-- SKEWED SECTION FOR TOUCHDEVICES-->
+
+    <section id="wrapperForMobile">
+        <div class="content-wrap">
+            <div class="content-body">
+                <img src="assets/images/robinson-bg.jpg" class="person" alt="Sir Robinson" width="100%">
+                <strong>Sir Ken Robinson</strong>
+                <h1>"Imagination is the source of every form of human achievement."</h1>
+                <br>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="content-body">
+                <img src="assets/images/speakers-sec-bg.jpg" class="person" alt="Josh Bersinn"  width="100%">
+                <strong>Josh Bersin</strong>
+                <br>
+                Principal & Founder, Bersin by Deloitte
+                <br>
+                <h1>"The best event in the world on HR and Technology."</h1>
+            </div>
+        </div>
+    </section>
 
     <!-- SPEAKERS PICTURES -->
     <!-- Filled from JS -->
     <section class="speakers">
+        <h1><span>Our speakers</span></h1>
         <ul></ul>
     </section>
 
