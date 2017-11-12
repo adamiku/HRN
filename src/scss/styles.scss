@@ -132,23 +132,30 @@ footer {
     & > div {
         flex: 0 1 14rem;
     }
-    .leftSide ul {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-    }
-    .rightSide ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-        ul a {
-            text-decoration: none;
-            color: $white;
+    .leftSide {
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-item {
+            margin: 0.3rem;
         }
     }
-    .list-item {
-        margin: 0.3rem;
+    .rightSide {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            .list-item {
+                margin: 0.8rem;
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
     }
 }
 

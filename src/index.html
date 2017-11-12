@@ -7,7 +7,7 @@
     <title>Unleash London</title>
 </head>
 <body>
-    <nav>
+    <nav class="hideOnMobile">
         <ul>    
             <li class="brandLogo"><img src="./assets/images/U.png" alt="Brand Logo"></li>
             <li class="flex-item"><a class="underlineAnim" href="#">Home</a></li>
@@ -19,16 +19,40 @@
             <li class="flex-item"><button>Book now</button></li>
         </ul>
     </nav>
+     <nav class="hideOnMid">
+        <ul>    
+            <li class="brandLogo"><img src="./assets/images/U.png" alt="Brand Logo"></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                    <a class="underlineAnim" href="#">Home</a>
+                    <a class="underlineAnim" href="#">News</a>
+                    <a class="underlineAnim" href="#">Events</a>
+                    <a class="underlineAnim" href="#">About</a>
+                    <a class="underlineAnim" href="#">Careers</a>
+                    <a class="underlineAnim" href="#">Sign up</a>
+                </div>
+            </li>
+        </ul>
+    </nav> 
     <header class="video-header container">
         <div class="fullscreen-video-wrapper">
-            <video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" autoplay="true" loop="true">
-            </video>
+             <video id="video">
+                 <source src="./assets/movie/movie.mp4">
+                YOur browser does not support the video tag
+            </video> 
+            <!-- <video src="https://www.youtube.com/watch?v=QpsvUwWku7w&list=PLM9nzPCGq9hhoGGWUPeNAoRrnpqUxMHl-" autoplay="true" loop="true">
+            </video> -->
         </div>
         <div class="header-overlay"></div>
         <div class="header-content text-md-center">
             <h1><span class="highlightText">Unleash</span> London</h1>
             <small>20-21 March 2018</small>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Id temporibus perferendis necessitatibus numquam amet impedit explicabo?
+                Debitis quasi ullam aperiam!
+            </p>
             <a class="btn">Book now</a>
         </div>
     </header>

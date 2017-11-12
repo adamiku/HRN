@@ -5,6 +5,11 @@ import { SPEAKERS } from './data';
 // Wait till domcontentloaded
 document.addEventListener('DOMContentLoaded', () => {
 
+    let video = document.getElementById('video');
+        video.addEventListener('click', () => {
+        video.play();
+    }, false);
+
     // Implement SKEW feature
     const wrapper = document.getElementById('wrapper');
     const topLayer = wrapper.querySelector('.top');
