@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Unleash your people at the fastest growing Future of Work shows in the world! Join us for UNLEASH London on 20-21 March 2018.">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://www.unleashgroup.io/gfx/london/favicon/favicon-32x32.png">
     <title>Unleash London</title>
 </head>
 <body>
     <nav class="hideOnMobile">
         <ul>    
             <li class="brandLogo"><img src="./assets/images/U.png" alt="Brand Logo"></li>
-            <li class="flex-item"><a class="underlineAnim" href="#">Home</a></li>
-            <li class="flex-item"><a class="underlineAnim" href="#">News</a></li>
-            <li class="flex-item"><a class="underlineAnim" href="#">Events</a></li>
-            <li class="flex-item"><a class="underlineAnim" href="#">About</a></li>
-            <li class="flex-item"><a class="underlineAnim" href="#">Careers</a></li>
+            <li class="flex-item"><a class="underlineAnim" href="#wrapper">News</a></li>
+            <li class="flex-item"><a class="underlineAnim" href="#speakers">Speakers</a></li>
+            <li class="flex-item"><a class="underlineAnim" href="#footer">About</a></li>
             <li class="flex-item"><a class="underlineAnim" href="#">Sign up</a></li>
             <li class="flex-item"><button>Book now</button></li>
         </ul>
@@ -23,19 +23,17 @@
         <ul>    
             <li class="brandLogo"><img src="./assets/images/U.png" alt="Brand Logo"></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">
+                <a href="javascript:void(0)" class="dropbtn" id="drop">
                     <div class="dropdownContainer">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
                 </a>
-                <div class="dropdown-content">
-                    <a class="underlineAnim" href="#">Home</a>
-                    <a class="underlineAnim" href="#">News</a>
-                    <a class="underlineAnim" href="#">Events</a>
-                    <a class="underlineAnim" href="#">About</a>
-                    <a class="underlineAnim" href="#">Careers</a>
+                <div class="dropdown-content" id="dropbtn">
+                    <a class="underlineAnim" href="#wrapperForMobile">News</a>
+                    <a class="underlineAnim" href="#speakers">Speakers</a>
+                    <a class="underlineAnim" href="#footer">About</a>
                     <a class="underlineAnim" href="#">Sign up</a>
                 </div>
             </li>
@@ -52,9 +50,8 @@
         <div class="header-content text-md-center">
             <h1><span class="highlightText">Unleash</span> London</h1>
             <small>20-21 March 2018</small>
-            <h2 class="hideOnMobile">THE FUTURE OF WORK IS NOW!</h2>
             <p class="hideOnMobile">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                THE FUTURE OF WORK IS NOW!
             </p>
             <a class="btn">Book now</a>
         </div>
@@ -115,16 +112,10 @@
 
     <!-- SPEAKERS PICTURES -->
     <!-- Filled from JS -->
-    <section class="speakers">
-        <h1><span>Our speakers</span></h1>
+    <section class="speakers" id="speakers">
+        <br>
+        <h1><span>Our Speakers</span></h1>
         <ul></ul>
-    </section>
-
-    <section class="section section-a">
-        <div class="container">
-        <h2>Section A</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
-        </div>
     </section>
 
     <!-- HURRY UP SECTION -->
@@ -138,7 +129,7 @@
     
     <!-- FOOTER -->
     
-    <footer id="footer" class="flexContainer">
+    <footer id="footer" name="footer" class="flexContainer">
 
         <!-- LEFTSIDE -->
 
@@ -160,7 +151,7 @@
                     <a class="underlineAnim" href="#">SHOW</a>
                 </li>
                 <li class="list-item">
-                    <a class="underlineAnim" href="#">SPEAKERS</a>
+                    <a class="underlineAnim" href="#speakers">SPEAKERS</a>
                 </li>
                 <li class="list-item">
                     <a class="underlineAnim" href="#">SPONSORS</a>

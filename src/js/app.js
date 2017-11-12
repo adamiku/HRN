@@ -57,8 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>${person.company}</span>
         </li>
         `
-    }) 
+    })
 
+    // Add speakers to HTML
     document.querySelector('.speakers ul').innerHTML = speakersHTML;
+    
+    const dropBtn = document.getElementById('drop');
+    let clicked = true;
+    dropBtn.addEventListener('click', () => {
+        if (clicked) {
+            document.getElementById('dropbtn').style.display = 'block';
+            clicked = false;
+        } else {
+            document.getElementById('dropbtn').style.display = 'none';            
+            clicked = true;
+        }
+
+    })
+
 
 });
