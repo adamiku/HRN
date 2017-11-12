@@ -69,18 +69,6 @@ module.exports = {
                         }  
                     }
                 ]
-            },
-            {
-                test: /\.mp4$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'assets/movie/'
-                        }  
-                    }
-                ]
             }
         ]
     },
@@ -90,6 +78,9 @@ module.exports = {
             template: 'src/index.html'
         }),
         new CleanWebpackPlugin(['dist']),
-        new CopyWebpackPlugin([{from: './src/assets/images/speakers'}])
+        new CopyWebpackPlugin([
+            {from: './src/assets/images/speakers'},        
+            {from: './src/assets/movie', to: 'assets/movie'}
+        ])
     ]
 };

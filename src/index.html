@@ -23,7 +23,13 @@
         <ul>    
             <li class="brandLogo"><img src="./assets/images/U.png" alt="Brand Logo"></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <a href="javascript:void(0)" class="dropbtn">
+                    <div class="dropdownContainer">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
                 <div class="dropdown-content">
                     <a class="underlineAnim" href="#">Home</a>
                     <a class="underlineAnim" href="#">News</a>
@@ -37,18 +43,16 @@
     </nav> 
     <header class="video-header container">
         <div class="fullscreen-video-wrapper">
-             <video id="video">
+             <video autoplay loop muted>
                  <source src="./assets/movie/movie.mp4">
-                YOur browser does not support the video tag
+                Your browser does not support the video tag
             </video> 
-            <!-- <video src="https://www.youtube.com/watch?v=QpsvUwWku7w&list=PLM9nzPCGq9hhoGGWUPeNAoRrnpqUxMHl-" autoplay="true" loop="true">
-            </video> -->
         </div>
         <div class="header-overlay"></div>
         <div class="header-content text-md-center">
             <h1><span class="highlightText">Unleash</span> London</h1>
             <small>20-21 March 2018</small>
-            <p>
+            <p class="hideOnMobile">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Id temporibus perferendis necessitatibus numquam amet impedit explicabo?
                 Debitis quasi ullam aperiam!

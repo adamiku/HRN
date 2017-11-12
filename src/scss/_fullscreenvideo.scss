@@ -1,50 +1,53 @@
 /* HEADER */
 
 .video-header {
-    height:100vh;
-    display:flex;
-    align-items:center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     color: $white;
 }
 
 .container {
     max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: auto;
     text-align: center;
 }
 
 .fullscreen-video-wrapper {
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     video {
-        min-height:100%;
-        min-width:100%;
+        min-height: 100%;
+        min-width: 100%;
     }
 }
 
 .header-overlay {
-    height:100vh;
+    height: 100vh;
     position: absolute;
-    top:0;
-    left:0;
-    width:100vw;
-    z-index:1;
-    background:#225470;
-    opacity:0.85;
-    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #225470;
+    opacity: 0.85;
 }
 
 .header-content {
     z-index:2;
+    small {
+        display: block;
+        padding: 1rem;
+    }
     h1 {
-        font-size:50px;
-        margin-bottom:0;
+        font-size: 50px;
+        margin-bottom: 0;
         position: relative;
         animation: heading;
         animation-duration: 3s;
@@ -59,9 +62,9 @@
         }
     }
     p {
-        font-size:1.5rem;
-        display:block;
-        padding-bottom:2rem;
+        font-size: 1.5rem;
+        display: block;
+        padding-bottom: 2rem;
         position: relative;
         animation: paragraphAnim;
         animation-duration: 3s;
@@ -81,6 +84,7 @@
 
 .btn {
     color: $white;
+    display: inline-block;
     border:  $white 1px solid;
     font-size:1.2rem;
     padding: 1rem 2rem;
